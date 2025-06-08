@@ -1,5 +1,7 @@
 'use client';
 
+import { Suspense } from 'react';
+
 import { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import {
@@ -10,11 +12,19 @@ import {
   doc, getDoc, setDoc, updateDoc,
   serverTimestamp,
 } from 'firebase/firestore';
-import { auth, db } from "../../lib/firebase"
+import { auth, db } from "@/lib/firebase"
 import { Button, TextInput, Alert, Spinner } from 'flowbite-react';
 import useUserRoles from '@/hooks/useUserRoles';
 
 export default function AuthPage() {
+  return (
+    <Suspense>
+      <AuthForm />
+    </Suspense>
+  );
+}
+
+function AuthForm() {
   const router          = useRouter();
   const params          = useSearchParams();
   const inviteToken     = params.get('token');               // ?token=abc
