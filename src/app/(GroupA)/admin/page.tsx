@@ -4,6 +4,7 @@ import LogoutButton from '@/app/UI/LogoutButton';
 import ErrorReportFab from '@/app/UI/ErrorReportFab';
 import DeleteAccountFab from '@/app/UI/DeleteAccountFab';
 import useAdminGuard from '@/hooks/useAdminGuard';
+import UserManagement from './UserManagement';
 
 export default function AdminPage() {
   const loading = useAdminGuard();
@@ -21,7 +22,7 @@ export default function AdminPage() {
       <div>
         <LogoutButton />
       </div>
-      {/* user-management UI goes here */}
+      <UserManagement />
       <ErrorReportFab />
       <DeleteAccountFab />
     </div>

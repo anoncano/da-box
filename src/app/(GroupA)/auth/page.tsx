@@ -63,6 +63,7 @@ function AuthForm() {
       if (mode === 'register') {
         const cred = await createUserWithEmailAndPassword(auth, email, pass);
         await setDoc(doc(db, 'users', cred.user.uid), {
+          email,
           admin: false, chatAdmin: false, subAdmin: false,
           createdAt: serverTimestamp(),
         });
