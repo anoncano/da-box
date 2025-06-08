@@ -12,7 +12,7 @@ import {
   doc, getDoc, setDoc, updateDoc,
   serverTimestamp,
 } from 'firebase/firestore';
-import { auth, db } from "../../lib/firebase"
+import { auth, db } from "@/lib/firebase"
 import { Button, TextInput, Alert, Spinner } from 'flowbite-react';
 import useUserRoles from '@/hooks/useUserRoles';
 
@@ -63,6 +63,7 @@ function AuthForm() {
       if (mode === 'register') {
         const cred = await createUserWithEmailAndPassword(auth, email, pass);
         await setDoc(doc(db, 'users', cred.user.uid), {
+          email,
           admin: false, chatAdmin: false, subAdmin: false,
           createdAt: serverTimestamp(),
         });

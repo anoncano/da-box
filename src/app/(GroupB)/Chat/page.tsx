@@ -1,9 +1,13 @@
 /* src/app/(groupb)/chat/page.tsx */
 "use client";
+import LogoutButton from '@/app/UI/LogoutButton';
+import ErrorReportFab from '@/app/UI/ErrorReportFab';
+import DeleteAccountFab from '@/app/UI/DeleteAccountFab';
 
 export default function ChatPage() {
   return (
-    <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 flex flex-col gap-4">
+      <LogoutButton />
       <form className="space-y-6" onSubmit={e => e.preventDefault()}>
         <h5 className="text-xl font-medium text-gray-900 dark:text-white">
           Sign in to our platform
@@ -65,6 +69,8 @@ export default function ChatPage() {
           </a>
         </div>
       </form>
+      <ErrorReportFab />
+      <DeleteAccountFab />
     </div>
   );
 }
