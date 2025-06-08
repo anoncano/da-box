@@ -1,7 +1,7 @@
 // src/hooks/useUserRoles.ts
 "use client";
 import { useEffect, useState } from "react";
-import { auth, db } from "../../src/app/lib/firebase";
+import { auth, db } from "@/lib/firebase";
 import { doc, onSnapshot } from "firebase/firestore";
 import { onAuthStateChanged } from "firebase/auth";
 
