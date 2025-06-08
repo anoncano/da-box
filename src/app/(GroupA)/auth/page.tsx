@@ -12,7 +12,7 @@ import {
   doc, getDoc, setDoc, updateDoc,
   serverTimestamp,
 } from 'firebase/firestore';
-import { auth, db } from "../../lib/firebase"
+import { auth, db } from "@/lib/firebase"
 import { Button, TextInput, Alert, Spinner } from 'flowbite-react';
 import useUserRoles from '@/hooks/useUserRoles';
 
