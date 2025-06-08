@@ -1,6 +1,10 @@
 'use client';
 import { Spinner } from 'flowbite-react';
+import LogoutButton from '@/app/UI/LogoutButton';
+import ErrorReportFab from '@/app/UI/ErrorReportFab';
+import DeleteAccountFab from '@/app/UI/DeleteAccountFab';
 import useAdminGuard from '@/hooks/useAdminGuard';
+import UserManagement from './UserManagement';
 
 export default function AdminPage() {
   const loading = useAdminGuard();
@@ -13,9 +17,14 @@ export default function AdminPage() {
   }
 
   return (
-    <div className="p-8">
+    <div className="p-8 flex flex-col gap-4">
       <h1 className="text-2xl font-bold mb-4">Admin dashboard</h1>
-      {/* user-management UI goes here */}
+      <div>
+        <LogoutButton />
+      </div>
+      <UserManagement />
+      <ErrorReportFab />
+      <DeleteAccountFab />
     </div>
   );
 }
