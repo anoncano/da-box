@@ -1,5 +1,5 @@
 /* src/app/layout.tsx */
-import "@/styles/globals.css";        // Tailwind base + Flowbite styles
+import "@/app/globals.css";        // Tailwind base + Flowbite styles
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
