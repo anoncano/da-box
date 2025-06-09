@@ -1,4 +1,4 @@
-// src/app/(GroupA)/admin/page.tsx
+// src/app/(GroupB)/General/page.tsx
 "use client";
 import LogoutButton from '@/components/LogoutButton';
 import ErrorReportFab from '@/components/ErrorReportFab';
