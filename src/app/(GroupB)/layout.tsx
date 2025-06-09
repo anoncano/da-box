@@ -1,4 +1,4 @@
-// src/app/(GroupA)/admin/layout.tsx
+// Layout wrapper for routes in (GroupB)
 export default function ChatNestedLayout(
   { children }: { children: React.ReactNode }
 ) {

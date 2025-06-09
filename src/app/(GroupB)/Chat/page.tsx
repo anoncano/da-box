@@ -1,8 +1,8 @@
 /* src/app/(groupb)/chat/page.tsx */
 "use client";
-import LogoutButton from '@/app/UI/LogoutButton';
-import ErrorReportFab from '@/app/UI/ErrorReportFab';
-import DeleteAccountFab from '@/app/UI/DeleteAccountFab';
+import LogoutButton from '@/components/LogoutButton';
+import ErrorReportFab from '@/components/ErrorReportFab';
+import DeleteAccountFab from '@/components/DeleteAccountFab';
 
 export default function ChatPage() {
   return (

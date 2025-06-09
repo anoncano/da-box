@@ -1,4 +1,4 @@
-// src/app/(GroupA)/admin/layout.tsx
+// Layout wrapper for routes in (GroupA)
 export default function AdminNestedLayout(
   { children }: { children: React.ReactNode }
 ) {
