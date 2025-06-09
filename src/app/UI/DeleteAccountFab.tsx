@@ -1,10 +1,7 @@
 'use client';
 // @ts-nocheck
 import { useState } from 'react';
-import { Button, Modal } from 'flowbite-react';
-const ModalHeader = (Modal as any).Header;
-const ModalBody = (Modal as any).Body;
-const ModalFooter = (Modal as any).Footer;
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'flowbite-react';
 import { auth } from '@/lib/firebase';
 import { deleteUser } from 'firebase/auth';
 
