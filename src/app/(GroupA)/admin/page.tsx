@@ -1,8 +1,8 @@
 'use client';
 import { Spinner } from 'flowbite-react';
-import LogoutButton from '@/app/UI/LogoutButton';
-import ErrorReportFab from '@/app/UI/ErrorReportFab';
-import DeleteAccountFab from '@/app/UI/DeleteAccountFab';
+import LogoutButton from '@/components/LogoutButton';
+import ErrorReportFab from '@/components/ErrorReportFab';
+import DeleteAccountFab from '@/components/DeleteAccountFab';
 import useAdminGuard from '@/hooks/useAdminGuard';
 import UserManagement from './UserManagement';
 

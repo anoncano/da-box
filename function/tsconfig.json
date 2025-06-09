@@ -12,6 +12,7 @@
   },
   "compileOnSave": true,
   "include": [
-    "src"
-, "../src/app/lib/firebase.ts"  ]
+      "src",
+      "../src/lib/firebase.ts"
+  ]
 }

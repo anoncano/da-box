@@ -1,10 +1,7 @@
 'use client';
 // @ts-nocheck
 import { useState } from 'react';
-import { Button, Modal, Textarea } from 'flowbite-react';
-const ModalHeader = (Modal as any).Header;
-const ModalBody = (Modal as any).Body;
-const ModalFooter = (Modal as any).Footer;
+import { Button, Modal, Textarea, ModalHeader, ModalBody, ModalFooter } from 'flowbite-react';
 import { auth, db } from '@/lib/firebase';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 

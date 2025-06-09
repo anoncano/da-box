@@ -8,7 +8,7 @@ export default function LogoutButton() {
   const router = useRouter();
   const doLogout = async () => {
     await signOut(auth);
-    router.replace('/auth');
+    router.replace('/Auth');
   };
 
   return (
